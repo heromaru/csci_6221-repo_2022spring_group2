@@ -9,23 +9,42 @@
 /* Begin PBXBuildFile section */
 		CE64604827FB95D100327B69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64604727FB95D100327B69 /* AppDelegate.swift */; };
 		CE64604A27FB95D100327B69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64604927FB95D100327B69 /* SceneDelegate.swift */; };
-		CE64604C27FB95D100327B69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64604B27FB95D100327B69 /* ViewController.swift */; };
 		CE64604F27FB95D100327B69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE64604D27FB95D100327B69 /* Main.storyboard */; };
 		CE64605227FB95D100327B69 /* SocialMediaApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE64605027FB95D100327B69 /* SocialMediaApp.xcdatamodeld */; };
 		CE64605427FB95D600327B69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE64605327FB95D600327B69 /* Assets.xcassets */; };
 		CE64605727FB95D600327B69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE64605527FB95D600327B69 /* LaunchScreen.storyboard */; };
+		CE71AE7B27FEB0730055CB6D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71AE7A27FEB0730055CB6D /* RegisterViewController.swift */; };
+		CE71AE7D27FEB4B70055CB6D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71AE7C27FEB4B70055CB6D /* WelcomeViewController.swift */; };
+		CE71AE8027FEBCFC0055CB6D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CE71AE7F27FEBCFC0055CB6D /* FirebaseAuth */; };
+		CE71AE8227FEC6C60055CB6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE71AE8127FEC6C60055CB6D /* GoogleService-Info.plist */; };
+		CE71AE8427FECCF80055CB6D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71AE8327FECCF80055CB6D /* LoginViewController.swift */; };
+		CE71AE8627FED9BA0055CB6D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71AE8527FED9BA0055CB6D /* HomeViewController.swift */; };
+		CE71AE8827FED9C50055CB6D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71AE8727FED9C50055CB6D /* SearchViewController.swift */; };
+		CE71AE8A27FED9D50055CB6D /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71AE8927FED9D50055CB6D /* NotificationsViewController.swift */; };
+		CE71AE8C27FED9E00055CB6D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71AE8B27FED9E00055CB6D /* MessagesViewController.swift */; };
+		CE71AE9027FEDC2D0055CB6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71AE8F27FEDC2D0055CB6D /* ViewController.swift */; };
+		CEC9E2E12800212100D87F34 /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9E2E02800212100D87F34 /* post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE64604427FB95D100327B69 /* SocialMediaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMediaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE64604727FB95D100327B69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE64604927FB95D100327B69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE64604B27FB95D100327B69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE64604E27FB95D100327B69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE64605127FB95D100327B69 /* SocialMediaApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SocialMediaApp.xcdatamodel; sourceTree = "<group>"; };
 		CE64605327FB95D600327B69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE64605627FB95D600327B69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE64605827FB95D600327B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE71AE7A27FEB0730055CB6D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CE71AE7C27FEB4B70055CB6D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		CE71AE8127FEC6C60055CB6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE71AE8327FECCF80055CB6D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE71AE8527FED9BA0055CB6D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE71AE8727FED9C50055CB6D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CE71AE8927FED9D50055CB6D /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		CE71AE8B27FED9E00055CB6D /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		CE71AE8F27FEDC2D0055CB6D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../../Desktop/software files/Swift/SocialMediaApp/SocialMediaApp/ViewController.swift"; sourceTree = "<group>"; };
+		CEC9E2E02800212100D87F34 /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE71AE8027FEBCFC0055CB6D /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +78,49 @@
 		CE64604627FB95D100327B69 /* SocialMediaApp */ = {
 			isa = PBXGroup;
 			children = (
+				CEC9E2DF280020F700D87F34 /* Models */,
+				CE71AE7927FEA8FB0055CB6D /* View */,
+				CE71AE7827FEA8E20055CB6D /* Controllers */,
 				CE64604727FB95D100327B69 /* AppDelegate.swift */,
 				CE64604927FB95D100327B69 /* SceneDelegate.swift */,
-				CE64604B27FB95D100327B69 /* ViewController.swift */,
-				CE64604D27FB95D100327B69 /* Main.storyboard */,
 				CE64605327FB95D600327B69 /* Assets.xcassets */,
 				CE64605527FB95D600327B69 /* LaunchScreen.storyboard */,
 				CE64605827FB95D600327B69 /* Info.plist */,
 				CE64605027FB95D100327B69 /* SocialMediaApp.xcdatamodeld */,
+				CE71AE8127FEC6C60055CB6D /* GoogleService-Info.plist */,
 			);
 			path = SocialMediaApp;
+			sourceTree = "<group>";
+		};
+		CE71AE7827FEA8E20055CB6D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE71AE7A27FEB0730055CB6D /* RegisterViewController.swift */,
+				CE71AE7C27FEB4B70055CB6D /* WelcomeViewController.swift */,
+				CE71AE8327FECCF80055CB6D /* LoginViewController.swift */,
+				CE71AE8527FED9BA0055CB6D /* HomeViewController.swift */,
+				CE71AE8727FED9C50055CB6D /* SearchViewController.swift */,
+				CE71AE8927FED9D50055CB6D /* NotificationsViewController.swift */,
+				CE71AE8B27FED9E00055CB6D /* MessagesViewController.swift */,
+				CE71AE8F27FEDC2D0055CB6D /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CE71AE7927FEA8FB0055CB6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE64604D27FB95D100327B69 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEC9E2DF280020F700D87F34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEC9E2E02800212100D87F34 /* post.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +139,9 @@
 			dependencies = (
 			);
 			name = SocialMediaApp;
+			packageProductDependencies = (
+				CE71AE7F27FEBCFC0055CB6D /* FirebaseAuth */,
+			);
 			productName = SocialMediaApp;
 			productReference = CE64604427FB95D100327B69 /* SocialMediaApp.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +170,9 @@
 				Base,
 			);
 			mainGroup = CE64603B27FB95D000327B69;
+			packageReferences = (
+				CE71AE7E27FEBCFC0055CB6D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CE64604527FB95D100327B69 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE64605727FB95D600327B69 /* LaunchScreen.storyboard in Resources */,
+				CE71AE8227FEC6C60055CB6D /* GoogleService-Info.plist in Resources */,
 				CE64605427FB95D600327B69 /* Assets.xcassets in Resources */,
 				CE64604F27FB95D100327B69 /* Main.storyboard in Resources */,
 			);
@@ -141,9 +201,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE64604C27FB95D100327B69 /* ViewController.swift in Sources */,
+				CE71AE8427FECCF80055CB6D /* LoginViewController.swift in Sources */,
+				CE71AE7B27FEB0730055CB6D /* RegisterViewController.swift in Sources */,
+				CE71AE8827FED9C50055CB6D /* SearchViewController.swift in Sources */,
+				CEC9E2E12800212100D87F34 /* post.swift in Sources */,
+				CE71AE8627FED9BA0055CB6D /* HomeViewController.swift in Sources */,
+				CE71AE9027FEDC2D0055CB6D /* ViewController.swift in Sources */,
+				CE71AE8A27FED9D50055CB6D /* NotificationsViewController.swift in Sources */,
 				CE64604827FB95D100327B69 /* AppDelegate.swift in Sources */,
+				CE71AE7D27FEB4B70055CB6D /* WelcomeViewController.swift in Sources */,
 				CE64604A27FB95D100327B69 /* SceneDelegate.swift in Sources */,
+				CE71AE8C27FED9E00055CB6D /* MessagesViewController.swift in Sources */,
 				CE64605227FB95D100327B69 /* SocialMediaApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +364,7 @@
 				DEVELOPMENT_TEAM = 42MXVM5LJ9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SocialMediaApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SocialMediaApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -310,7 +379,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,6 +393,7 @@
 				DEVELOPMENT_TEAM = 42MXVM5LJ9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SocialMediaApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SocialMediaApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -338,7 +408,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -364,6 +434,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE71AE7E27FEBCFC0055CB6D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE71AE7F27FEBCFC0055CB6D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE71AE7E27FEBCFC0055CB6D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CE64605027FB95D100327B69 /* SocialMediaApp.xcdatamodeld */ = {
