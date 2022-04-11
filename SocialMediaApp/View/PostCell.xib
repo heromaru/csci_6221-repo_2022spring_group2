@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="205" id="KGk-i7-Jjw" customClass="PostCell" customModule="SocialMediaApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="537" height="205"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="537" height="205"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wte-M3-Rdw">
+                        <rect key="frame" x="8" y="8" width="521" height="189"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" highlightedImage="anonymous" translatesAutoresizingMaskIntoConstraints="NO" id="hPy-t2-WoS">
+                                <rect key="frame" x="8" y="9" width="77" height="89.5"/>
+                                <color key="backgroundColor" name="avatarViewBackground"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qV7-7D-wcn">
+                                <rect key="frame" x="94" y="9" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="a few minutes ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kX3-VW-0vE">
+                                <rect key="frame" x="94" y="35" width="88" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is awesome stuff.This is awesome stuffThis is awesome stuffThis is awesome stuff]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYB-rg-yO1">
+                                <rect key="frame" x="94" y="114" width="400" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hPy-t2-WoS" firstAttribute="width" secondItem="wte-M3-Rdw" secondAttribute="height" multiplier="73:179" constant="1" id="2xz-On-Hnn"/>
+                            <constraint firstItem="kYB-rg-yO1" firstAttribute="top" secondItem="hPy-t2-WoS" secondAttribute="bottom" constant="2" id="7Qg-15-68e"/>
+                            <constraint firstItem="qV7-7D-wcn" firstAttribute="top" secondItem="wte-M3-Rdw" secondAttribute="top" constant="9" id="8mP-sv-T0Q"/>
+                            <constraint firstAttribute="bottom" secondItem="kYB-rg-yO1" secondAttribute="bottom" constant="20" id="A9O-WS-kTH"/>
+                            <constraint firstAttribute="trailing" secondItem="kYB-rg-yO1" secondAttribute="trailing" constant="8" id="GOo-iG-Z0o"/>
+                            <constraint firstItem="kX3-VW-0vE" firstAttribute="leading" secondItem="hPy-t2-WoS" secondAttribute="trailing" constant="8" symbolic="YES" id="GjM-MF-Z9f"/>
+                            <constraint firstItem="kX3-VW-0vE" firstAttribute="top" secondItem="qV7-7D-wcn" secondAttribute="bottom" constant="5" id="H2g-gH-v1l"/>
+                            <constraint firstAttribute="trailing" secondItem="kYB-rg-yO1" secondAttribute="trailing" constant="20" symbolic="YES" id="Pyt-f9-aGm"/>
+                            <constraint firstItem="kYB-rg-yO1" firstAttribute="leading" secondItem="hPy-t2-WoS" secondAttribute="trailing" constant="8" id="in9-6a-F25"/>
+                            <constraint firstItem="kYB-rg-yO1" firstAttribute="firstBaseline" secondItem="kX3-VW-0vE" secondAttribute="baseline" constant="20" symbolType="layoutAnchor" id="pL0-cy-b3X"/>
+                            <constraint firstItem="hPy-t2-WoS" firstAttribute="leading" secondItem="wte-M3-Rdw" secondAttribute="leading" constant="8" id="vuh-HR-J47"/>
+                            <constraint firstItem="hPy-t2-WoS" firstAttribute="top" secondItem="wte-M3-Rdw" secondAttribute="top" constant="40" id="weA-jh-qbp"/>
+                            <constraint firstItem="qV7-7D-wcn" firstAttribute="leading" secondItem="hPy-t2-WoS" secondAttribute="trailing" constant="8" symbolic="YES" id="z0d-n0-c0a"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="wte-M3-Rdw" secondAttribute="bottom" constant="8" id="6nY-ni-FcW"/>
+                    <constraint firstItem="wte-M3-Rdw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Ckf-wj-Mcc"/>
+                    <constraint firstItem="wte-M3-Rdw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="eUm-HS-i1k"/>
+                    <constraint firstAttribute="trailing" secondItem="wte-M3-Rdw" secondAttribute="trailing" constant="8" id="wnB-d0-JLr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="postTextLabel" destination="kYB-rg-yO1" id="nQS-G7-mw6"/>
+                <outlet property="profileImageView" destination="hPy-t2-WoS" id="JnM-gS-sEq"/>
+                <outlet property="subtitleLabel" destination="kX3-VW-0vE" id="rUc-zY-fWr"/>
+                <outlet property="usernameLabel" destination="qV7-7D-wcn" id="Hj7-6V-ZaL"/>
+            </connections>
+            <point key="canvasLocation" x="294.92753623188406" y="156.36160714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="anonymous" width="24" height="24"/>
+        <namedColor name="avatarViewBackground">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
