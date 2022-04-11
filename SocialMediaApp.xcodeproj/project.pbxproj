@@ -22,7 +22,6 @@
 		CE71AE8827FED9C50055CB6D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71AE8727FED9C50055CB6D /* SearchViewController.swift */; };
 		CE71AE8A27FED9D50055CB6D /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71AE8927FED9D50055CB6D /* NotificationsViewController.swift */; };
 		CE71AE8C27FED9E00055CB6D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71AE8B27FED9E00055CB6D /* MessagesViewController.swift */; };
-		CE71AE9027FEDC2D0055CB6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71AE8F27FEDC2D0055CB6D /* ViewController.swift */; };
 		CEC9E2E12800212100D87F34 /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9E2E02800212100D87F34 /* post.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +42,6 @@
 		CE71AE8727FED9C50055CB6D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CE71AE8927FED9D50055CB6D /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		CE71AE8B27FED9E00055CB6D /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
-		CE71AE8F27FEDC2D0055CB6D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../../Desktop/software files/Swift/SocialMediaApp/SocialMediaApp/ViewController.swift"; sourceTree = "<group>"; };
 		CEC9E2E02800212100D87F34 /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +100,6 @@
 				CE71AE8727FED9C50055CB6D /* SearchViewController.swift */,
 				CE71AE8927FED9D50055CB6D /* NotificationsViewController.swift */,
 				CE71AE8B27FED9E00055CB6D /* MessagesViewController.swift */,
-				CE71AE8F27FEDC2D0055CB6D /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -206,7 +203,6 @@
 				CE71AE8827FED9C50055CB6D /* SearchViewController.swift in Sources */,
 				CEC9E2E12800212100D87F34 /* post.swift in Sources */,
 				CE71AE8627FED9BA0055CB6D /* HomeViewController.swift in Sources */,
-				CE71AE9027FEDC2D0055CB6D /* ViewController.swift in Sources */,
 				CE71AE8A27FED9D50055CB6D /* NotificationsViewController.swift in Sources */,
 				CE64604827FB95D100327B69 /* AppDelegate.swift in Sources */,
 				CE71AE7D27FEB4B70055CB6D /* WelcomeViewController.swift in Sources */,
