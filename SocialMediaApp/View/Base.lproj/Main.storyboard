@@ -75,13 +75,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="292" id="TRj-Rp-cEP">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="292"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="676" id="TRj-Rp-cEP">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="676"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TRj-Rp-cEP" id="jIu-wJ-B1V">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="292"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="fmt-4r-u7r" kind="show" id="p2r-fg-liR"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -98,12 +101,11 @@
                         <barButtonItem key="rightBarButtonItem" image="square.and.pencil" catalog="system" id="WWD-Eb-0Ol">
                             <connections>
                                 <action selector="newPostButtonPressedd:" destination="BYZ-38-t0r" id="Jcv-FZ-s8y"/>
-                                <segue destination="fmt-4r-u7r" kind="show" id="yLf-nb-f23"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="homeTableView" destination="8yA-g2-AuE" id="JIj-Q8-9HL"/>
+                        <outlet property="tableView" destination="8yA-g2-AuE" id="Ltd-Xw-Cai"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

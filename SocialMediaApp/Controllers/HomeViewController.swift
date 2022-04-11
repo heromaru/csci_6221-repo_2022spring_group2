@@ -12,36 +12,31 @@ import FirebaseAnalytics
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var homeTableView: UITableView!
-    
+    @IBOutlet weak var tableView: UITableView!
     var posts = [Post]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        homeTableView = UITableView(frame: view.bounds, style: .plain)
-        
-       
-        
+    
         let cellNib = UINib(nibName: "PostCell", bundle: nil)
-        homeTableView.register(cellNib, forCellReuseIdentifier: "ReusableCell")
-        view.addSubview(homeTableView)
+        tableView.register(cellNib, forCellReuseIdentifier: "ReusableCell")
+        view.addSubview(tableView)
         
         var layoutGuide: UILayoutGuide
         layoutGuide = view.safeAreaLayoutGuide
         
-        homeTableView.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor).isActive = true
-        homeTableView.topAnchor.constraint(equalTo: layoutGuide.topAnchor).isActive = true
-        homeTableView.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor).isActive = true
-        homeTableView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor).isActive = true
+        tableView.leadingAnchor.constraint(equalTo: layoutGuide.leadingAnchor).isActive = true
+        tableView.topAnchor.constraint(equalTo: layoutGuide.topAnchor).isActive = true
+        tableView.trailingAnchor.constraint(equalTo: layoutGuide.trailingAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor).isActive = true
         
-    
         self.tabBarController?.navigationItem.hidesBackButton = true
         
-        homeTableView.dataSource = self
-        homeTableView.delegate = self
-        homeTableView.tableFooterView = UIView()
-        homeTableView.backgroundColor = UIColor.blue
-        homeTableView.reloadData()
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.tableFooterView = UIView()
+        tableView.backgroundColor = UIColor.white
+        tableView.reloadData()
         
         observePosts()
 
@@ -53,7 +48,7 @@ class HomeViewController: UIViewController {
         
         postsRef.observe(.value, with: { snapshot in
             
-            var tempPosts = [Post]{}
+            var tempPosts = [Post]()
             
             for child in snapshot.children {
                 if let childSnapshot = child as? DataSnapshot,
@@ -73,7 +68,6 @@ class HomeViewController: UIViewController {
             }
             
             self.posts = tempPosts
-            self.tableView.reloadData()
             
         })
     }
