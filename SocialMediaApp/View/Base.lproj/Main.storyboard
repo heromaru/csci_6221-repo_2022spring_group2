@@ -82,9 +82,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="fmt-4r-u7r" kind="show" id="p2r-fg-liR"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -101,6 +98,7 @@
                         <barButtonItem key="rightBarButtonItem" image="square.and.pencil" catalog="system" id="WWD-Eb-0Ol">
                             <connections>
                                 <action selector="newPostButtonPressedd:" destination="BYZ-38-t0r" id="Jcv-FZ-s8y"/>
+                                <segue destination="fmt-4r-u7r" kind="show" id="NVt-VK-Xzy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -518,12 +516,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DOp-t8-VcO" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="620" y="1517"/>
+            <point key="canvasLocation" x="771" y="1543"/>
         </scene>
-        <!--New Post View Controller-->
+        <!--View Controller-->
         <scene sceneID="k8g-2T-KPB">
             <objects>
-                <viewController storyboardIdentifier="NewPostViewController" id="fmt-4r-u7r" customClass="NewPostViewController" customModule="SocialMediaApp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewPostViewController" id="fmt-4r-u7r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mu6-R2-HxF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -534,8 +532,8 @@
                                 <color key="textColor" red="0.59999999999999998" green="0.71372549019999998" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hFk-Mf-0lo">
-                                <rect key="frame" x="12" y="100" width="390" height="701"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hFk-Mf-0lo">
+                                <rect key="frame" x="20" y="64" width="342" height="786"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

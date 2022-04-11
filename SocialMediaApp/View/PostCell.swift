@@ -29,8 +29,9 @@ class PostCell: UITableViewCell {
     }
     
     func set(post:Post) {
-        usernameLabel.text = post.author.username
+        usernameLabel.text = post.author
         postTextLabel.text = post.text
+        subtitleLabel.text = post.time
         
     }
     

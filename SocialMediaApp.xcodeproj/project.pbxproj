@@ -10,9 +10,6 @@
 		8E61A8CD0AD9EA49ACDB7D92 /* Pods_SocialMediaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DEE7737186E908FFBC094F8 /* Pods_SocialMediaApp.framework */; };
 		CE19FE632803F07000C7ACA7 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE19FE622803F07000C7ACA7 /* MessageKit */; };
 		CE19FE672803F39200C7ACA7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19FE662803F39200C7ACA7 /* ChatViewController.swift */; };
-		CE19FE692804742700C7ACA7 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19FE682804742600C7ACA7 /* NewPostViewController.swift */; };
-		CE19FE6D280476AA00C7ACA7 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19FE6C280476AA00C7ACA7 /* UserProfile.swift */; };
-		CE19FE702804771E00C7ACA7 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19FE6F2804771E00C7ACA7 /* UserService.swift */; };
 		CE19FEAB280491D000C7ACA7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CE19FEAA280491D000C7ACA7 /* FirebaseAnalytics */; };
 		CE19FEAD280491D000C7ACA7 /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = CE19FEAC280491D000C7ACA7 /* FirebaseAnalyticsSwift-Beta */; };
 		CE19FEAF280491D000C7ACA7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CE19FEAE280491D000C7ACA7 /* FirebaseAuth */; };
@@ -44,9 +41,6 @@
 		8DEE7737186E908FFBC094F8 /* Pods_SocialMediaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialMediaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E93AAD59FC1D2DC6F0531A /* Pods-SocialMediaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaApp.release.xcconfig"; path = "Target Support Files/Pods-SocialMediaApp/Pods-SocialMediaApp.release.xcconfig"; sourceTree = "<group>"; };
 		CE19FE662803F39200C7ACA7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		CE19FE682804742600C7ACA7 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
-		CE19FE6C280476AA00C7ACA7 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		CE19FE6F2804771E00C7ACA7 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		CE64604427FB95D100327B69 /* SocialMediaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMediaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE64604727FB95D100327B69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE64604927FB95D100327B69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +102,6 @@
 		CE19FE6E2804770400C7ACA7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				CE19FE6F2804771E00C7ACA7 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -160,7 +153,6 @@
 				CE71AE8B27FED9E00055CB6D /* MSGViewController.swift */,
 				CE71AE8F27FEDC2D0055CB6D /* ViewController.swift */,
 				CE19FE662803F39200C7ACA7 /* ChatViewController.swift */,
-				CE19FE682804742600C7ACA7 /* NewPostViewController.swift */,
 				CE19FE6E2804770400C7ACA7 /* Services */,
 			);
 			path = Controllers;
@@ -180,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				CEC9E2E02800212100D87F34 /* Post.swift */,
-				CE19FE6C280476AA00C7ACA7 /* UserProfile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -303,17 +294,14 @@
 				CEC9E2E12800212100D87F34 /* Post.swift in Sources */,
 				CE71AE8627FED9BA0055CB6D /* HomeViewController.swift in Sources */,
 				CE71AE9027FEDC2D0055CB6D /* ViewController.swift in Sources */,
-				CE19FE702804771E00C7ACA7 /* UserService.swift in Sources */,
 				CE71AE8A27FED9D50055CB6D /* NotificationsViewController.swift in Sources */,
 				CE64604827FB95D100327B69 /* AppDelegate.swift in Sources */,
 				CE71AE7D27FEB4B70055CB6D /* WelcomeViewController.swift in Sources */,
 				CE64604A27FB95D100327B69 /* SceneDelegate.swift in Sources */,
 				CE71AE8C27FED9E00055CB6D /* MSGViewController.swift in Sources */,
 				CE64605227FB95D100327B69 /* SocialMediaApp.xcdatamodeld in Sources */,
-				CE19FE6D280476AA00C7ACA7 /* UserProfile.swift in Sources */,
 				CE19FE672803F39200C7ACA7 /* ChatViewController.swift in Sources */,
 				CE85A6E52803C9120046EDAD /* PostCell.swift in Sources */,
-				CE19FE692804742700C7ACA7 /* NewPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

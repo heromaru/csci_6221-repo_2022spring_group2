@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SocialMediaApp
 //
-//  Created by Oğuzhan Yangöz on 4/4/22.
+//  Created by Oğuzhan Yangöz on 3/12/22.
 //
 
 import UIKit
