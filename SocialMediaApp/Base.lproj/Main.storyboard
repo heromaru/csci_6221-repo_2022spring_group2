@@ -95,20 +95,20 @@
                                 <action selector="logoutButtonPressed:" destination="BYZ-38-t0r" id="WVm-8g-ibw"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="square.and.pencil" catalog="system" id="WWD-Eb-0Ol">
+                        <barButtonItem key="rightBarButtonItem" image="square.and.pencil" catalog="system" changesSelectionAsPrimaryAction="YES" id="WWD-Eb-0Ol">
                             <connections>
-                                <action selector="newPostButtonPressedd:" destination="BYZ-38-t0r" id="Jcv-FZ-s8y"/>
-                                <segue destination="fmt-4r-u7r" kind="show" id="NVt-VK-Xzy"/>
+                                <action selector="newPostPressed:" destination="BYZ-38-t0r" id="kYE-mo-mp2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="8yA-g2-AuE" id="Ltd-Xw-Cai"/>
+                        <segue destination="fmt-4r-u7r" kind="show" identifier="HomeToNewPost" id="Ize-27-BfA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1923.1884057971015" y="1542.8571428571429"/>
+            <point key="canvasLocation" x="-1881" y="1535"/>
         </scene>
         <!--Notifications-->
         <scene sceneID="3Jb-UN-aGd">
@@ -518,22 +518,16 @@
             </objects>
             <point key="canvasLocation" x="771" y="1543"/>
         </scene>
-        <!--View Controller-->
+        <!--New post-->
         <scene sceneID="k8g-2T-KPB">
             <objects>
-                <viewController storyboardIdentifier="NewPostViewController" id="fmt-4r-u7r" sceneMemberID="viewController">
+                <viewController id="fmt-4r-u7r" customClass="PostViewController" customModule="SocialMediaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mu6-R2-HxF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's happening?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBA-ST-PLc">
-                                <rect key="frame" x="16" y="108" width="386" height="38.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
-                                <color key="textColor" red="0.59999999999999998" green="0.71372549019999998" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hFk-Mf-0lo">
-                                <rect key="frame" x="20" y="64" width="342" height="786"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="What's happening?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hFk-Mf-0lo">
+                                <rect key="frame" x="20" y="138" width="382" height="606"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -542,25 +536,21 @@
                         <viewLayoutGuide key="safeArea" id="12i-jF-0Az"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="hFk-Mf-0lo" firstAttribute="top" secondItem="12i-jF-0Az" secondAttribute="top" constant="80" id="2OZ-aq-Ycd"/>
                             <constraint firstItem="hFk-Mf-0lo" firstAttribute="top" secondItem="12i-jF-0Az" secondAttribute="top" constant="12" id="9QH-0f-P6f"/>
-                            <constraint firstItem="12i-jF-0Az" firstAttribute="trailing" secondItem="mBA-ST-PLc" secondAttribute="trailing" constant="12" id="AjA-D2-FVo"/>
-                            <constraint firstItem="mBA-ST-PLc" firstAttribute="leading" secondItem="12i-jF-0Az" secondAttribute="leading" constant="16" id="MNp-DR-fSJ"/>
                             <constraint firstItem="12i-jF-0Az" firstAttribute="bottom" secondItem="hFk-Mf-0lo" secondAttribute="bottom" constant="12" id="Mgu-af-Pb6"/>
-                            <constraint firstItem="mBA-ST-PLc" firstAttribute="top" secondItem="12i-jF-0Az" secondAttribute="top" constant="20" id="RW7-bj-cfU"/>
                             <constraint firstItem="hFk-Mf-0lo" firstAttribute="leading" secondItem="12i-jF-0Az" secondAttribute="leading" constant="12" id="VOp-gJ-dSp"/>
+                            <constraint firstItem="12i-jF-0Az" firstAttribute="bottom" secondItem="hFk-Mf-0lo" secondAttribute="bottom" constant="20" id="g6D-eI-wzd"/>
+                            <constraint firstItem="12i-jF-0Az" firstAttribute="trailing" secondItem="hFk-Mf-0lo" secondAttribute="trailing" constant="20" id="hTX-L2-GR1"/>
+                            <constraint firstItem="hFk-Mf-0lo" firstAttribute="top" secondItem="12i-jF-0Az" secondAttribute="top" constant="80" id="l4K-5W-FUo"/>
                             <constraint firstItem="12i-jF-0Az" firstAttribute="trailing" secondItem="hFk-Mf-0lo" secondAttribute="trailing" constant="12" id="n4h-Lh-zM0"/>
+                            <constraint firstItem="hFk-Mf-0lo" firstAttribute="leading" secondItem="12i-jF-0Az" secondAttribute="leading" constant="20" id="wMo-Aw-Ykr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Y98-3O-fsz">
-                        <barButtonItem key="leftBarButtonItem" image="delete" style="plain" id="eyF-Zs-IGA">
-                            <color key="tintColor" red="0.59400786400000005" green="0.85299750600000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <connections>
-                                <action selector="handleCancelButton" destination="fmt-4r-u7r" id="wCR-iA-wdG"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="9fp-9z-Ps2">
+                    <toolbarItems>
+                        <barButtonItem style="plain" id="9fp-9z-Ps2">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="SI5-OU-B3Q">
-                                <rect key="frame" x="311" y="4.5" width="83" height="35"/>
+                                <rect key="frame" x="20" y="9.5" width="374" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.59400786400000005" green="0.85299750600000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
@@ -572,32 +562,49 @@
                                 </connections>
                             </button>
                         </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="New post" id="Y98-3O-fsz">
+                        <barButtonItem key="leftBarButtonItem" title="Discard" image="trash" catalog="system" style="plain" changesSelectionAsPrimaryAction="YES" id="eyF-Zs-IGA">
+                            <color key="tintColor" systemColor="tintColor"/>
+                            <connections>
+                                <action selector="discardButtonPressed:" destination="fmt-4r-u7r" id="jyR-Qf-qD1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Send" image="paperplane" catalog="system" id="zLB-Bi-U9j">
+                            <connections>
+                                <action selector="sendButtonPressed:" destination="fmt-4r-u7r" id="9Lg-xP-jil"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="cancelButton" destination="eyF-Zs-IGA" id="4sg-dZ-0rD"/>
-                        <outlet property="doneButton" destination="SI5-OU-B3Q" id="MgZ-7Y-3ja"/>
-                        <outlet property="placeHolderLabel" destination="mBA-ST-PLc" id="Nnn-OW-Z1i"/>
-                        <outlet property="textView" destination="hFk-Mf-0lo" id="wpR-hn-GVy"/>
+                        <outlet property="discardButton" destination="eyF-Zs-IGA" id="2YR-eh-bhS"/>
+                        <outlet property="navigationBar" destination="Y98-3O-fsz" id="brw-yz-O2M"/>
+                        <outlet property="sendButton" destination="zLB-Bi-U9j" id="CAh-l5-V7e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6N-EO-yvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1881.1594202898552" y="2301.5625"/>
+            <point key="canvasLocation" x="-1881.1594202898552" y="2312.9464285714284"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mjp-dc-Uhd"/>
+        <segue reference="dOs-Wd-nmZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background" width="89" height="74.5"/>
-        <image name="delete" width="24" height="24"/>
         <image name="drop.circle.fill" catalog="system" width="128" height="121"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="message.fill" catalog="system" width="128" height="113"/>
+        <image name="paperplane" catalog="system" width="128" height="118"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

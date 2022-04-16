@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var posts : [Post] =  [
         Post(id: "1", author: "Oğuzhan Yangöz", text: "I LOVE NUTELLLA!",  time: "4 minutes ago"),
-        Post(id: "2", author: "Oğuzhan Yangöz", text: "I hate mondays...", time: "27 minutes ago"),
+        Post(id: "2", author: "Oğuzhan Yangöz", text: "I hate mondays...", time: "2 hours ago"),
         Post(id: "3", author: "Quisch Kin", text: "I love math!", time: "42 minutes ago"),
         Post(id: "4", author: "Ouisch Kin", text: "Messi is my fav player!", time: "47 minutes ago"),
         Post(id: "5", author: "Joe Biden", text: " I will be a candidate again!", time: "2 days ago"),
@@ -51,12 +51,12 @@ class HomeViewController: UIViewController {
         
     }
     
-
     
-    @IBAction func newPostButtonPressedd(_ sender: Any) {
-        let vc = UIViewController()
-        navigationController?.pushViewController(vc, animated: true)
+    @IBAction func newPostPressed(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "HomeToNewPost", sender: self)
     }
+    
+
     
     
     @IBAction func logoutButtonPressed(_ sender: UIBarButtonItem) {
