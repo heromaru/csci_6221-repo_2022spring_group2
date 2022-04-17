@@ -35,6 +35,7 @@
 		CE85A6E62803C9120046EDAD /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE85A6E42803C9120046EDAD /* PostCell.xib */; };
 		CEC9E2E12800212100D87F34 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9E2E02800212100D87F34 /* Post.swift */; };
 		CEEC1E0B28055089005EDD0F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEEC1E0A28055089005EDD0F /* GoogleService-Info.plist */; };
+		CEF944A1280B8553003E6262 /* VARIABLES.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF944A0280B8553003E6262 /* VARIABLES.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		CE85A6E42803C9120046EDAD /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		CEC9E2E02800212100D87F34 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CEEC1E0A28055089005EDD0F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEF944A0280B8553003E6262 /* VARIABLES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VARIABLES.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +103,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		CE19FE6E2804770400C7ACA7 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		CE64603B27FB95D000327B69 = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +135,6 @@
 				CEC9E2DF280020F700D87F34 /* Models */,
 				CE71AE7927FEA8FB0055CB6D /* View */,
 				CE71AE7827FEA8E20055CB6D /* Controllers */,
-				CE19FE6E2804770400C7ACA7 /* Services */,
 			);
 			path = SocialMediaApp;
 			sourceTree = "<group>";
@@ -175,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC9E2E02800212100D87F34 /* Post.swift */,
+				CEF944A0280B8553003E6262 /* VARIABLES.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -294,6 +289,7 @@
 				CE71AE8427FECCF80055CB6D /* LoginViewController.swift in Sources */,
 				CE71AE7B27FEB0730055CB6D /* RegisterViewController.swift in Sources */,
 				CE71AE8827FED9C50055CB6D /* SearchViewController.swift in Sources */,
+				CEF944A1280B8553003E6262 /* VARIABLES.swift in Sources */,
 				CEC9E2E12800212100D87F34 /* Post.swift in Sources */,
 				CE71AE8627FED9BA0055CB6D /* HomeViewController.swift in Sources */,
 				CE71AE9027FEDC2D0055CB6D /* ViewController.swift in Sources */,

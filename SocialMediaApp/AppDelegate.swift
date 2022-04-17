@@ -8,21 +8,29 @@
 import UIKit
 import CoreData
 import Firebase
+import FirebaseDatabase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-  func application(_ application: UIApplication,
-    didFinishLaunchingWithOptions launchOptions:
-                   [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+      
     FirebaseApp.configure()
-    var ref: DatabaseReference!
+    
 
-    ref = Database.database().reference()
+
+    //ref = Database.database().reference()
+    //FirebaseApp.configure()
+    //var ref: DatabaseReference!
+
+    //ref = Database.database().reference()
 
     return true
   }
+    
+    
 
     
 
