@@ -39,27 +39,27 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
         Message.messages.append(Message(sender: otherUser,
                                 messageId: "1",
                                 sentDate: Date().addingTimeInterval(-86400),
-                                kind: .text("Hey,  how is it going?")))
+                                kind: .text("Hey, are you watching Australia Grand Prix?")))
         
         Message.messages.append(Message(sender: currentUser,
                                 messageId: "2",
                                 sentDate: Date().addingTimeInterval(-70400),
-                                kind: .text("not bad, how about you? ")))
+                                kind: .text("yeah, Charles Leclerc is on fire! ")))
         
         Message.messages.append(Message(sender: otherUser,
                                 messageId: "3",
                                 sentDate: Date().addingTimeInterval(-56400),
-                                kind: .text("pretty good, getting ready to go out to grab beer with Joseph. You wanna join?")))
+                                kind: .text("yeap, Ferrari is faster than Mercedes and Redbull this year.")))
         
         Message.messages.append(Message(sender: currentUser,
                                 messageId: "4",
                                 sentDate: Date().addingTimeInterval(-36400),
-                                kind: .text("it would be awesome but I have an assignment due tomorrow")))
+                                kind: .text("I think so too, but Max Verstappen can beat him after the upgrades in Miami")))
                                 
         Message.messages.append(Message(sender: otherUser,
                                 messageId: "5",
                                 sentDate: Date().addingTimeInterval(-26400),
-                                kind: .text("...")))
+                                kind: .text("I don't think so, but it's definetely gonna be so fun!")))
         
         messagesCollectionView.messagesDataSource = self
         messagesCollectionView.messagesLayoutDelegate = self

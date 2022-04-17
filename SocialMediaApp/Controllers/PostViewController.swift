@@ -15,9 +15,6 @@ class PostViewController: UIViewController {
     @IBOutlet weak var discardButton: UIBarButtonItem!
     @IBOutlet weak var postContent: UITextView!
     
-
-    
-    //var posts = Database.database().reference().child("Posts").childByAutoId()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +29,7 @@ class PostViewController: UIViewController {
         let posts = VARIABLES.database.child("posts").childByAutoId()
         let user = Auth.auth().currentUser
         
-        
-        
-      
+
         let postObject: [String: Any] =  [
             //"username": registerController.userNameTextField ?? "some_user",
             "username": user?.displayName ?? "some_user",
@@ -51,18 +46,8 @@ class PostViewController: UIViewController {
                        
                        
     @IBAction func discardButtonPressed(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
     }
 
- 
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

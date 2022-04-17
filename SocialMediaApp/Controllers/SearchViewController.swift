@@ -7,13 +7,34 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class resultsVC: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .cyan
+    }
+}
+
+class SearchViewController: UIViewController, UISearchResultsUpdating {
+    
+    
+    let searchController  = UISearchController(searchResultsController: resultsVC())
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else {
+            return
+        }
+        print(text)
     }
     
 
